@@ -4,6 +4,18 @@ v3 .onion address vanity URL generator written in Go.
 
 This implementation generates random ed25519 keys across all CPU cores. The ed25519 public key is converted to a Tor v3 .onion address which is then compared to a user supplied regex to find a vanity URL. If the regex for the .onion address matches, the secret key is expanded for use by Tor and the public key, secret key, and hostname are written to file in a new directory named for the .onion address. The program terminates when the user supplied number of addresses have been generated.
 
+##build
+```
+chmod +x install.sh
+```
+```
+bash install.sh
+```
+## Usage build
+oniongen "^trkn" 5
+
+
+
 ## Usage
 
 ```
