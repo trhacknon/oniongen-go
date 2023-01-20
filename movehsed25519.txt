@@ -1,0 +1,5 @@
+mv hs_ed25519...  /var/lib/tor/hidden_service
+chown -R debian-tor /var/lib/tor
+chmod 700 /var/lib/tor/hidden_service
+sudo /etc/init.d/tor restart
+sudo -u debian-tor tor
